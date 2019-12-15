@@ -4,7 +4,6 @@ const moveList = [
     'dropkick',
     'leg drop',
     'leglock',
-    'faceslam',
     'monkey flip',
     'atomic drop',
     'backbreaker',
@@ -15,6 +14,15 @@ const moveList = [
     'brainbuster',
     'clothesline',
     'chokeslam',
+    'posterize',
+    'batista bomb',
+    'bonzai drop',
+    'curb stomp',
+    'glam slam',
+    "people's elbow",
+    'scissor kick',
+    'stone cold stunner',
+    'tombstone',
 ]
 walk(document.body);
 function walk(node) 
@@ -97,6 +105,7 @@ function toCapitalized(text) {
     return firstLetter + text.slice(1)
 }
 
+// Returns a random move with the given tense
 function randomMove(isPlural, isPast) {
 
     const moveIndex = Math.floor(Math.random()*moveList.length);
